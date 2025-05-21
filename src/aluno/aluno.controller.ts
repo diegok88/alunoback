@@ -5,7 +5,7 @@ import { UpdateAlunoDto } from './dto/update-aluno.dto';
 
 @Controller('aluno')
 export class AlunoController {
-  constructor(private readonly alunoService: AlunoService) {}
+  constructor(private readonly alunoService: AlunoService) { }
 
   @Post()
   create(@Body() createAlunoDto: CreateAlunoDto) {
